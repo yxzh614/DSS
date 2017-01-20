@@ -1,33 +1,26 @@
 
 <?php
+/*setting.php
+服务器连接字符串。
+头文件。
+
+*/
 chdir(dirname(__FILE__));
+//设置网站根目录
 $mysql_server="localhost";
+//主机名
 $mysql_username="root";
+//用户名
 $mysql_userpass="abcdefg707";
+//用户密码
 $db_name="score";
+//数据库名
 $db=mysqli_connect($mysql_server,$mysql_username,$mysql_userpass);
 mysqli_select_db($db,$db_name);
 mysqli_query($db,"set names utf8");
 
 
-function utf8_substr($str,$len)
-{
-    $new_str[]='';
-    for ($i = 0; $i < $len; $i++) {
-        $temp_str = substr($str, 0, 1);
-        if (ord($temp_str) > 127) {
-            $i++;
-            if ($i < $len) {
-                $new_str[] = substr($str, 0, 3);
-                $str = substr($str, 3);
-            }
-        } else {
-            $new_str[] = substr($str, 0, 1);
-            $str = substr($str, 1);
-        }
-    }
-    return join($new_str);
-}
+
 
 ?>
 <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">

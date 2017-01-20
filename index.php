@@ -1,12 +1,13 @@
 <?php
-
+//主页
 require_once("setting.php");
-if(!isset($_COOKIE["flag"])){
+
+if(!isset($_COOKIE["flag"])){//登录
     require_once ("login.php");
 }
 else {
-    require ("navbar.php");
-    require ("leftbar.php");
+    require ("navbar.php");//导航条
+    require ("leftbar.php");//侧边条
     ?>
     <div id="mainarea">
     <?php
