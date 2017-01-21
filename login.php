@@ -30,6 +30,7 @@ if(isset($_POST['submit'])&&$_POST["submit"]) {
 ?>
 <div id="login">
 
+    <h1>寝室评分系统</h1>
 <form role="form" action="login.php" method="post">
     <div class="form-group">
         <label for="inputusername">用户名</label>
