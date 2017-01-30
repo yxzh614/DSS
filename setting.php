@@ -19,7 +19,9 @@ $db=mysqli_connect($mysql_server,$mysql_username,$mysql_userpass);
 mysqli_select_db($db,$db_name);
 mysqli_query($db,"set names utf8");
 
-
+if(!defined('IN_SYS')) {
+    exit('禁止访问');
+}
 
 
 ?>

@@ -5,7 +5,7 @@
  * Date: 17/1/18
  * Time: 15:31
  */
-
+require_once ("setting.php");
 setcookie("username",'');
 
 setcookie("flag",'');

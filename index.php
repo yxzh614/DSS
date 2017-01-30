@@ -1,5 +1,8 @@
 <?php
 //主页
+if(!defined('IN_SYS')){
+    define('IN_SYS',true);
+}
 require_once("setting.php");
 
 if(!isset($_COOKIE["flag"])){//登录

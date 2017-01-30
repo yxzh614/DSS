@@ -5,6 +5,7 @@
  * Date: 17/1/18
  * Time: 17:36
  */
+require_once ("setting.php");
 ?>
 <div id="leftbar" class="list-group">
     <?php
@@ -61,6 +62,10 @@
                     echo "<a class='list-group-item' href='index.php?class=building&building=" . $rowsFAT["BuildNum"] . "'>" . $rowsFAT["BuildNum"] . "</a>";
                 }
             }break;
+            case 'upfile':{
+                echo "<a class='list-group-item'>学生信息</a>";
+                echo "<a class='list-group-item'>评分信息</a>";
+            } break;
         }
     }
     ?>

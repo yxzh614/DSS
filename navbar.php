@@ -4,7 +4,10 @@
  * User: ak-hyeon-chal
  * Date: 17/1/18
  * Time: 17:33
- */?>
+ *
+ */
+require_once ("setting.php");
+?>
 <nav class="navbar navbar-default navbar navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -22,7 +25,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="admin.php">管理</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="admin.php?class=upfile">上传</a></li>
+                        <li class="divider"></li>
+                        <li><a href="admin.php?class=modify">修改</a></li>
+                        <li class="divider"></li>
+                        <li><a href="admin.php?class=count">统计</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">分类 <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -36,7 +48,7 @@
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
+                    <input type="text" class="form-control" placeholder="输入学号或班级">
                 </div>
                 <button type="submit" class="btn btn-default">搜索</button>
             </form>
