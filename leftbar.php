@@ -36,12 +36,7 @@ require_once ("setting.php");
                     $sqlFindTheGrade = "select Grade from tbl_col_dep_grade WHERE College=" . $rowsFAC["HouseID"];
                     $resFTG = mysqli_query($db, $sqlFindTheGrade);
                     while ($rowsFTG = mysqli_fetch_assoc($resFTG)) {
-                        if($rowsFAC["HouseID"]<10){
-                            $houseid='0'.$rowsFAC["HouseID"];
-                        }
-                        else{
-                            $houseid=$rowsFAC["HouseID"];
-                        }
+                        $houseid = $rowsFAC["HouseID"] < 10 ? '0' . $rowsFAC["HouseID"] : $rowsFAC["HouseID"];
                         echo '<li role = "presentation" ><a role = "menuitem" tabindex = "-1" href = "index.php?class=grade&grade='. $rowsFTG["Grade"].$houseid .' ">'.$rowsFTG["Grade"].'</a ></li >';
                         }
                         ?>

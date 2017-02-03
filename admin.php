@@ -17,5 +17,8 @@ if(isset($_GET["class"])){
         case 'upfile':{
             include "upload.php";
         }break;
+        case 'count':{
+            include "count.php";
+        }break;
     }
 }

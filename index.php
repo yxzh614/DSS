@@ -94,6 +94,10 @@ GROUP BY
                 echo "<td>" . $rowsGTS["aScore"] . "</td>";
                 echo "</tr>";
             }
+            ?>
+            </tbody>
+        </table>
+            <?php
             }
             }
             }
