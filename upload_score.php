@@ -5,8 +5,11 @@
  * Date: 17/1/16
  * Time: 16:08
  */
+if(!defined('IN_SYS')) {
+    define('IN_SYS', true);
+}
 require_once ("setting.php");
-include("upload_fun.php");
+include("upload_score_fun.php");
 
 if($_POST['submit']&&$_POST["submit"]){
 
