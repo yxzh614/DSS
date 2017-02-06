@@ -46,11 +46,11 @@ require_once ("setting.php");
                     </ul>
                 </li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
+            <form class="navbar-form navbar-left" role="search" action="search.php" method="post">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="输入学号或班级">
+                    <input type="text" class="form-control" name="target" placeholder="输入学号或班级">
                 </div>
-                <button type="submit" class="btn btn-default">搜索</button>
+                <input type="submit" name="submit" class="btn btn-default" value="搜索">
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="logout.php">退出</a></li>
