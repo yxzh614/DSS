@@ -11,7 +11,8 @@ require_once ("setting.php");
 require ("navbar.php");
 if(isset($_POST["submit"])&&$_POST["submit"]) {
     if (strlen($_POST["target"]) == 10) {
-        $sqlNumToName = "SELECT StuName FROM tbl_student WHERE StuNum=".$_POST["target"];
+        $sqlNumToNameBed = "SELECT StuName,BuildNum,RoomNum,BedNum  FROM tbl_student,tbl_stu_dor WHERE tbl_student.StuNum=".$_POST["target"]." AND tbl_stu_dor.StuNum=".$_POST["target"];
+
         $sqlAllTheStudent = "SELECT
   tbl_studentscore.Time AS sst,
   tbl_user.Name AS un,
@@ -23,15 +24,23 @@ WHERE
   tbl_studentscore.StuNum = '".$_POST["target"]."' AND tbl_studentscore.UserName = tbl_user.UserName
 ORDER BY
   TIME";
-        if ($resNTN = mysqli_query($db, $sqlNumToName)) {
+        if ($resNTN = mysqli_query($db, $sqlNumToNameBed)) {
             if ($resATS = mysqli_query($db, $sqlAllTheStudent)) {
 
                 ?>
                 <table class="table table-striped table-condensed">
                     <caption><?php
                         echo "学号：".$_POST["target"];
-                        while ($rowsNTN=mysqli_fetch_assoc($resNTN)){
-                            echo "姓名：".$rowsNTN["StuName"];
+
+                        echo "<br>";
+                        while ($rowsNTNB=mysqli_fetch_assoc($resNTN)){
+                            echo "姓名：".$rowsNTNB["StuName"];
+                            echo "<br>";
+                            echo "lh:".$rowsNTNB["BuildNum"];
+                            echo "<br>";
+                            echo "rn".$rowsNTNB["RoomNum"];
+                            echo "<br>";
+                            echo "bn".$rowsNTNB["BedNum"];
                         }
                         ?>
                     </caption>

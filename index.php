@@ -136,7 +136,7 @@ GROUP BY
         while ($rowsBTS = mysqli_fetch_assoc($resBTS)) {
             echo "<tr>";
             echo "<td>" . $rowsBTS["sssn"] . "</td>";
-            echo "<td>" . $rowsBTS["ssn"] . "</td>";
+            echo "<td>" . $rowsBTS["ssn"] . "</a></td>";
             echo "<td>" . $rowsBTS["aScore"] . "</td>";
             $rowsBTS_un=explode(",",$rowsBTS["un"]);
             echo "<td>" . $rowsBTS_un[0] . "</td>";
