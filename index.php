@@ -61,45 +61,49 @@ GROUP BY
                 }
             } break;
             case 'grade': {
-    if (isset($_GET["grade"])){
-    $sqlGraToStu = 'SELECT
+                if (isset($_GET["grade"])) {
+                    $sqlGraToStu = 'SELECT
   s.StuName AS ssn,
   ss.StuNum AS sssn,
-  AVG(Score) AS aScore
+  AVG(Score) AS aScore,
+  MAX(u.Name) AS un
 FROM
   tbl_student AS s,
   tbl_studentscore AS ss,
-  tbl_stu_tea AS st
+  tbl_stu_tea AS st,
+  tbl_user AS u
 WHERE
-  ss.StuNum = s.StuNum AND ss.StuNum = st.StuNum AND ss.StuNum LIKE "' . $_GET["grade"] . '______"
+  ss.StuNum = s.StuNum AND ss.StuNum = st.StuNum AND ss.StuNum LIKE "' . $_GET["grade"] . '______" AND st.UserName = u.UserName
 GROUP BY
   sssn';
-    if ($resGTS = mysqli_query($db, $sqlGraToStu)){
-    ?>
-        <table class="table table-striped table-condensed">
-            <caption>按学院分类</caption>
-            <thead>
-            <tr>
-                <th>学号</th>
-                <th>姓名</th>
-                <th>得分</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php
-            while ($rowsGTS = mysqli_fetch_assoc($resGTS)) {
-                echo "<tr>";
-                echo "<td>" . $rowsGTS["sssn"] . "</td>";
-                echo "<td>" . $rowsGTS["ssn"] . "</td>";
-                echo "<td>" . $rowsGTS["aScore"] . "</td>";
-                echo "</tr>";
-            }
-            ?>
-            </tbody>
-        </table>
-            <?php
-            }
-            }
+                    if ($resGTS = mysqli_query($db, $sqlGraToStu)) {
+                        ?>
+                        <table class="table table-striped table-condensed">
+                            <caption>按学院分类</caption>
+                            <thead>
+                            <tr>
+                                <th>学号</th>
+                                <th>姓名</th>
+                                <th>指导员</th>
+                                <th>得分</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            while ($rowsGTS = mysqli_fetch_assoc($resGTS)) {
+                                echo "<tr>";
+                                echo "<td>" . $rowsGTS["sssn"] . "</td>";
+                                echo "<td>" . $rowsGTS["ssn"] . "</td>";
+                                echo "<td>".$rowsGTS["un"]."</td>";
+                                echo "<td>" . $rowsGTS["aScore"] . "</td>";
+                                echo "</tr>";
+                            }
+                            ?>
+                            </tbody>
+                        </table>
+                        <?php
+                    }
+                }
             }
             break;
             case 'building':{
@@ -108,7 +112,9 @@ if(isset($_GET["building"])){
   s.StuName AS ssn,
   ss.StuNum AS sssn,
   AVG(ss.Score) AS aScore,
-  GROUP_CONCAT(u.Name) AS un
+  MAX(u.Name) AS un,
+  MAX(sd.RoomNum) AS sdrn,
+  MAX(sd.BedNum) AS sdbn
 FROM
   tbl_student AS s,
   tbl_studentscore AS ss,
@@ -127,6 +133,8 @@ GROUP BY
         <tr>
             <th>学号</th>
             <th>姓名</th>
+            <th>寝室</th>
+            <th>床号</th>
             <th>得分</th>
             <th>导员</th>
         </tr>
@@ -137,9 +145,10 @@ GROUP BY
             echo "<tr>";
             echo "<td>" . $rowsBTS["sssn"] . "</td>";
             echo "<td>" . $rowsBTS["ssn"] . "</a></td>";
+            echo "<td>" . $rowsBTS["sdrn"] . "</a></td>";
+            echo "<td>" . $rowsBTS["sdbn"] . "</a></td>";
             echo "<td>" . $rowsBTS["aScore"] . "</td>";
-            $rowsBTS_un=explode(",",$rowsBTS["un"]);
-            echo "<td>" . $rowsBTS_un[0] . "</td>";
+            echo "<td>" . $rowsBTS["un"] . "</td>";
             echo "</tr>";
         }
     }
