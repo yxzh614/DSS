@@ -7,7 +7,7 @@
  */
 require_once ("setting.php");
 ?>
-<div id="leftbar" class="list-group">
+<div id="leftbar" class="list-group hidden-print">
     <?php
     if (isset($_GET["class"])) {
         switch ($_GET["class"]){

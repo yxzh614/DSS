@@ -4,6 +4,7 @@
  * User: ak-hyeon-chal
  * Date: 17/1/16
  * Time: 16:08
+ * 上传分数
  */
 if(!defined('IN_SYS')) {
     define('IN_SYS', true);
@@ -27,8 +28,10 @@ if($_POST['submit']&&$_POST["submit"]){
         echo $msg;
         ?>
         <script>
+           /*
             alert('导入成功');
             window.location="index.php";
+            */
         </script>
         <?php
     }

@@ -2,10 +2,9 @@
 /**
  * Created by PhpStorm.
  * User: ak-hyeon-chal
- * Date: 17/1/19
- * Time: 15:27
+ * Date: 17/2/15
+ * Time: 12:35
  */
-//导入Excel文件
 
 function uploadFile($db, $file,$filetempname)
 {
@@ -58,32 +57,32 @@ function uploadFile($db, $file,$filetempname)
             //explode:函数把字符串分割为数组。
             $strs = explode("\\", $str);
             if($strs[0]!=''){
-            //var_dump($strs);
-            //die();
-            $sql = "INSERT INTO `tbl_studentscore` (`ID`, `StuNum`, `Time`, `UserName`, `Score`, `Category`) VALUES (NULL, '" . $strs[0] . "', '" . $strs[8] . "', '" . $strs[7] . "', " . $strs[11] . ", NULL)";
-            //echo $sql;
-            mysqli_query($db, ' set names utf8');//这就是指定数据库字符集，一般放在连接数据库后面就系了
-            if (!mysqli_query($db, $sql)) {
-                echo $sql;
-                echo "<br>";
-                echo $strs[0];
-                echo "<br>";
-                echo $strs[1];
-                echo "<br>";
-                echo $strs[2];
-                echo "<br>";
-                echo $strs[3];
-                echo "<br>";
-                echo $str;
-                echo "<br>";
-                echo "err";
+                //var_dump($strs);
+                //die();
+                $sql = "INSERT INTO `tbl_studentscore` (`ID`, `StuNum`, `Time`, `UserName`, `Score`, `Category`) VALUES (NULL, '" . $strs[0] . "', '" . $strs[8] . "', '" . $strs[7] . "', " . $strs[11] . ", NULL)";
+                //echo $sql;
+                mysqli_query($db, ' set names utf8');//这就是指定数据库字符集，一般放在连接数据库后面就系了
+                if (!mysqli_query($db, $sql)) {
+                    echo $sql;
+                    echo "<br>";
+                    echo $strs[0];
+                    echo "<br>";
+                    echo $strs[1];
+                    echo "<br>";
+                    echo $strs[2];
+                    echo "<br>";
+                    echo $strs[3];
+                    echo "<br>";
+                    echo $str;
+                    echo "<br>";
+                    echo "err";
 
-                echo "<br>";
-                echo $highestColumn;
-                return false;
+                    echo "<br>";
+                    echo $highestColumn;
+                    return false;
+                }
+                $str = "";
             }
-            $str = "";
-        }
         }
         unlink($uploadfile); //删除上传的excel文件
         $msg = "导入成功！";

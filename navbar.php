@@ -8,7 +8,7 @@
  */
 require_once ("setting.php");
 ?>
-<nav class="navbar navbar-default navbar navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar navbar-fixed-top hidden-print" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -48,7 +48,7 @@ require_once ("setting.php");
             </ul>
             <form class="navbar-form navbar-left" role="search" action="search.php" method="post">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="target" placeholder="输入学号或班级">
+                    <input type="text" class="form-control" name="target" placeholder="支持学号、班级">
                 </div>
                 <input type="submit" name="submit" class="btn btn-default" value="搜索">
             </form>
