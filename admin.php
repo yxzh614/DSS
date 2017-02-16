@@ -11,19 +11,34 @@ if(!defined('IN_SYS')){
 require_once "setting.php";
 require "leftbar.php";
 include "navbar.php";
-
+?>
+    <div id="mainarea">
+<?php
 if(isset($_GET["class"])) {
     switch ($_GET["class"]) {
         case 'upfile': {
             if (isset($_GET["type"])) {
                 switch ($_GET["type"]) {
                     case 'student': {
+                        ?>
+
+                        <form method="post" action="upload_stu_dor.php" enctype="multipart/form-data">
+                            <h3>导入学生-寝室Excel表：</h3><input type="file" name="file_stu"/>
+                            <input type="hidden" name="leadExcel" value="true">
+                            <input type="submit" name="submit" value="导入"/>
+                        </form>
+                        <form method="post" action="upload_stu_info.php" enctype="multipart/form-data">
+                            <h3>导入学生Excel表：</h3><input type="file" name="file_stu"/>
+                            <input type="hidden" name="leadExcel" value="true">
+                            <input type="submit" name="submit" value="导入"/>
+                        </form>
+                        <?php
                     }
                         break;
                     case 'score': {
                         ?>
                         <form method="post" action="upload_score.php" enctype="multipart/form-data">
-                            <h3>导入Excel表：</h3><input type="file" name="file_stu"/>
+                            <h3>导入分数Excel表：</h3><input type="file" name="file_stu"/>
                             <input type="hidden" name="leadExcel" value="true">
                             <input type="submit" name="submit" value="导入"/>
                         </form>
@@ -74,3 +89,5 @@ if(isset($_GET["class"])) {
             break;
     }
 }
+?>
+    </div>

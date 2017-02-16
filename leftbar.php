@@ -58,7 +58,7 @@ require_once ("setting.php");
                 }
             }break;
             case 'upfile':{
-                echo "<a class='list-group-item'>学生信息</a>";
+                echo "<a href='admin.php?class=upfile&type=student' class='list-group-item'>学生信息</a>";
                 echo "<a href='admin.php?class=upfile&type=score' class='list-group-item'>评分信息</a>";
             } break;
         }

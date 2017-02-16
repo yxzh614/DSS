@@ -2,14 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: ak-hyeon-chal
- * Date: 17/2/16
- * Time: 14:08
+ * Date: 17/2/15
+ * Time: 12:35
  */
+
 if(!defined('IN_SYS')) {
     define('IN_SYS', true);
 }
 require_once ("setting.php");
-include("upload_stu_info_fun.php");
+include("upload_stu_dor_fun.php");
 
 if($_POST['submit']&&$_POST["submit"]){
 
