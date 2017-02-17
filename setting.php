@@ -21,7 +21,7 @@ mysqli_query($db,"set names utf8");
 
 if(!defined('IN_SYS')) {
     exit('禁止访问');
-}
+}//限制访问页面
 
 
 ?>

@@ -14,10 +14,17 @@ require_once ("setting.php");
             case 'teacher':{
                 $sqlFindAllTeacher = "select Name,UserName from tbl_user WHERE Flag=1";
                 $resFAT = mysqli_query($db, $sqlFindAllTeacher);
-
+                ?>
+                <div class="btn-group-vertical" style="width: 100%">
+                <?php
                 while ($rowsFAT = mysqli_fetch_assoc($resFAT)) {
-                    echo "<a class='list-group-item' href='index.php?class=teacher&teacher=" . $rowsFAT["UserName"] . "'>" . $rowsFAT["Name"] . "</a>";
+
+                    echo "<a class='btn btn-default list-group-item' href='index.php?class=teacher&teacher=" . $rowsFAT["UserName"] . "'>" . $rowsFAT["Name"] . "</a>";
+
                 }
+                ?>
+                </div>
+                <?php
             }break;
             case 'grade':{
                 $sqlFindAllCollege = "select HouseName,HouseID from tbl_college_name ORDER BY HouseID";
@@ -33,7 +40,7 @@ require_once ("setting.php");
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <?php
-                    $sqlFindTheGrade = "select Grade from tbl_col_dep_grade WHERE College=" . $rowsFAC["HouseID"];
+                    $sqlFindTheGrade = "select DISTINCT Grade from tbl_col_dep_grade WHERE College=" . $rowsFAC["HouseID"]." ORDER BY Grade" ;
                     $resFTG = mysqli_query($db, $sqlFindTheGrade);
                     while ($rowsFTG = mysqli_fetch_assoc($resFTG)) {
                         $houseid = $rowsFAC["HouseID"] < 10 ? '0' . $rowsFAC["HouseID"] : $rowsFAC["HouseID"];

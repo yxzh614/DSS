@@ -5,6 +5,9 @@
  * Date: 17/1/18
  * Time: 15:31
  */
+if(!defined('IN_SYS')){
+    define('IN_SYS',true);
+}
 require_once ("setting.php");
 setcookie("username",'');
 
