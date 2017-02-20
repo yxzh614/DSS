@@ -68,6 +68,10 @@ require_once ("setting.php");
                 echo "<a href='admin.php?class=upfile&type=student' class='list-group-item'>学生信息</a>";
                 echo "<a href='admin.php?class=upfile&type=score' class='list-group-item'>评分信息</a>";
             } break;
+            case 'count':{
+
+                echo "<a href='admin.php?class=count&type=college' class='list-group-item'>学院</a>";
+            }break;
         }
     }
     ?>

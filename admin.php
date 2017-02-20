@@ -49,40 +49,49 @@ if(isset($_GET["class"])) {
         }
             break;
         case 'count': {
-            $sqlFindAllCollege = "select HouseName,HouseID from tbl_college_name ORDER BY HouseID";
-            if ($resFAC = mysqli_query($db, $sqlFindAllCollege)) {
-                while ($rowsFAC = mysqli_fetch_assoc($resFAC)) {
-                    ?>
-                    <table class="table table-striped table-condensed">
-                        <caption>按学院分类</caption>
-                        <thead>
-                        <tr>
-                            <th>学院</th>
-                            <th>得分</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php
-                        while ($rowsFAC = mysqli_fetch_assoc($resFAC)) {
-                            echo "<tr>";
-                            echo "<td>" . $rowsFAC["HouseName"] . "</td>";
-                            $houseid = $rowsFAC["HouseID"] < 10 ? '0' . $rowsFAC["HouseID"] : $rowsFAC["HouseID"];
-                            $sqlAScoreOfCollege = 'SELECT AVG(Score) AS ac FROM tbl_studentscore AS ss WHERE ss.StuNum LIKE "__' . $houseid . '______"';
-                            if ($resAOC = mysqli_query($db, $sqlAScoreOfCollege)) {
-                                while ($rowsAOC = mysqli_fetch_assoc($resAOC)) {
-                                    echo "<td>" . $rowsAOC["ac"] . "</td>";
-                                }
+            if(isset($_GET["type"])){
+                switch ($_GET["type"]){
+                    case 'college':{
+                        $sqlFindAllCollege = "select DISTINCT College,Grade,HouseName FROM tbl_col_dep_grade,tbl_college_name WHERE HouseID=College ORDER BY College,Grade";
+                        if ($resFAC = mysqli_query($db, $sqlFindAllCollege)) {
+                            while ($rowsFAC = mysqli_fetch_assoc($resFAC)) {
+                                ?>
+                                <table class="table table-bordered">
+                                    <caption>按学院分类</caption>
+                                    <thead>
+                                    <tr>
+                                        <th>学院</th>
+                                        <th>年级</th>
+                                        <th>得分</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php
+                                    while ($rowsFAC = mysqli_fetch_assoc($resFAC)) {
+                                        echo "<tr>";
+                                        echo "<td>" . $rowsFAC["HouseName"] . "</td>";
+                                        echo "<td>" .$rowsFAC["Grade"]. "</td>";
+                                        $houseid = $rowsFAC["College"] < 10 ? '0' . $rowsFAC["College"] : $rowsFAC["College"];
+                                        $grade=$rowsFAC["Grade"];
+                                        $sqlAScoreOfCollege = 'SELECT AVG(Score) AS ac FROM tbl_studentscore AS ss WHERE ss.StuNum LIKE "' . $grade. $houseid .'______"';
+                                        if ($resAOC = mysqli_query($db, $sqlAScoreOfCollege)) {
+                                            while ($rowsAOC = mysqli_fetch_assoc($resAOC)) {
+                                                echo "<td>" . $rowsAOC["ac"] . "</td>";
+                                            }
+                                        }
+
+                                        echo "</tr>";
+                                    }
+                                    ?>
+                                    </tbody>
+                                </table>
+                                <?php
                             }
-
-                            echo "</tr>";
                         }
-                        ?>
-                        </tbody>
-                    </table>
-
-                    <?php
+                    }break;
                 }
             }
+
         }
             break;
     }
