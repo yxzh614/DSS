@@ -2,10 +2,9 @@
 /**
  * Created by PhpStorm.
  * User: ak-hyeon-chal
- * Date: 17/1/19
- * Time: 15:27
+ * Date: 17/2/15
+ * Time: 12:35
  */
-//导入Excel文件
 
 function uploadFile($db, $file,$filetempname)
 {
@@ -46,9 +45,11 @@ function uploadFile($db, $file,$filetempname)
         for($j=2;$j<=$highestRow;$j++) {
             for ($k = 'A'; $k <= $highestColumn; $k++) {
                 //iconv('utf-8','gbk',$objPHPExcel->getActiveSheet()->getCell("$k$j")->getValue()).'\\';//读取单元格
-                if ($k == 'B') {
+                if ($k == 'I') {
                     $str .= gmdate("Y-m-d", PHPExcel_Shared_Date::ExcelToPHP($objPHPExcel->getActiveSheet()->getCell("$k$j")->getValue())) . '\\';
-                } else {
+                } else if ($k=='L'){
+                    $str .= ($objPHPExcel->getActiveSheet()->getCell("$k$j")->getValue())*5/100 . '\\';
+                }else{
                     $str .= $objPHPExcel->getActiveSheet()->getCell("$k$j")->getValue() . '\\';
                 }
             }
@@ -56,29 +57,40 @@ function uploadFile($db, $file,$filetempname)
             //explode:函数把字符串分割为数组。
             $strs = explode("\\", $str);
             if($strs[0]!=''){
-            //var_dump($strs);
-            //die();
-            $sql = "INSERT INTO `tbl_studentscore` (`ID`, `StuNum`, `Time`, `UserName`, `Score`, `Category`) VALUES (NULL, '" . $strs[0] . "', '" . $strs[1] . "', '" . $strs[2] . "', " . $strs[3] . ", NULL)";
-            //echo $sql;
-            mysqli_query($db, ' set names utf8');//这就是指定数据库字符集，一般放在连接数据库后面就系了
-            if (!mysqli_query($db, $sql)) {
-                echo $sql;
-                echo "<br>";
-                echo $strs[0];
-                echo "<br>";
-                echo $strs[1];
-                echo "<br>";
-                echo $strs[2];
-                echo "<br>";
-                echo $strs[3];
-                echo "<br>";
-                echo $str;
-                echo "<br>";
-                echo "err";
-                return false;
+                //var_dump($strs);
+                //die();
+                $col=substr($strs[0],2,2);//院
+                $dep=substr($strs[0],4,2);//系
+                $gra=substr($strs[0],0,2);//届
+                $sql =
+                    //"INSERT INTO `tbl_student` ( `StuNum`,`StuName`,`StuTel`) VALUES ( '" . $strs[0] . "','".$strs[1]."','13000000000')";
+                    //添加学生信息
+                //"INSERT INTO `tbl_col_dep_grade`(`College`,`Department`,`Grade`) VALUES (".$col.",".$dep.",".$gra.")";
+                //添加院-系-届
+                "INSERT INTO `tbl_stu_tea` (`StuNum`,`UserName`) VALUES('".$strs[0]."','".$strs[6]."')";
+                //添加学生-导员
+                //echo $sql;
+                mysqli_query($db, ' set names utf8');//这就是指定数据库字符集，一般放在连接数据库后面就系了
+                if (!mysqli_query($db, $sql)) {
+                    echo $sql;
+                    echo "<br>";
+                    echo $strs[0];
+                    echo "<br>";
+                    echo $strs[1];
+                    echo "<br>";
+                    echo $strs[2];
+                    echo "<br>";
+                    echo $strs[3];
+                    echo "<br>";
+                    echo $str;
+                    echo "<br>";
+                    echo "err";
+                    echo "<br>";
+                    echo $highestColumn;
+                    //return false; 出错停止
+                }
+                $str = "";
             }
-            $str = "";
-        }
         }
         unlink($uploadfile); //删除上传的excel文件
         $msg = "导入成功！";

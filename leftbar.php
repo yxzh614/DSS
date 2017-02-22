@@ -5,18 +5,26 @@
  * Date: 17/1/18
  * Time: 17:36
  */
+require_once ("setting.php");
 ?>
-<div id="leftbar" class="list-group">
+<div id="leftbar" class="list-group hidden-print">
     <?php
     if (isset($_GET["class"])) {
         switch ($_GET["class"]){
             case 'teacher':{
                 $sqlFindAllTeacher = "select Name,UserName from tbl_user WHERE Flag=1";
                 $resFAT = mysqli_query($db, $sqlFindAllTeacher);
-
+                ?>
+                <div class="btn-group-vertical" style="width: 100%">
+                <?php
                 while ($rowsFAT = mysqli_fetch_assoc($resFAT)) {
-                    echo "<a class='list-group-item' href='index.php?class=teacher&teacher=" . $rowsFAT["UserName"] . "'>" . $rowsFAT["Name"] . "</a>";
+
+                    echo "<a class='btn btn-default list-group-item' href='index.php?class=teacher&teacher=" . $rowsFAT["UserName"] . "'>" . $rowsFAT["Name"] . "</a>";
+
                 }
+                ?>
+                </div>
+                <?php
             }break;
             case 'grade':{
                 $sqlFindAllCollege = "select HouseName,HouseID from tbl_college_name ORDER BY HouseID";
@@ -32,15 +40,10 @@
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <?php
-                    $sqlFindTheGrade = "select Grade from tbl_col_dep_grade WHERE College=" . $rowsFAC["HouseID"];
+                    $sqlFindTheGrade = "select DISTINCT Grade from tbl_col_dep_grade WHERE College=" . $rowsFAC["HouseID"]." ORDER BY Grade" ;
                     $resFTG = mysqli_query($db, $sqlFindTheGrade);
                     while ($rowsFTG = mysqli_fetch_assoc($resFTG)) {
-                        if($rowsFAC["HouseID"]<10){
-                            $houseid='0'.$rowsFAC["HouseID"];
-                        }
-                        else{
-                            $houseid=$rowsFAC["HouseID"];
-                        }
+                        $houseid = $rowsFAC["HouseID"] < 10 ? '0' . $rowsFAC["HouseID"] : $rowsFAC["HouseID"];
                         echo '<li role = "presentation" ><a role = "menuitem" tabindex = "-1" href = "index.php?class=grade&grade='. $rowsFTG["Grade"].$houseid .' ">'.$rowsFTG["Grade"].'</a ></li >';
                         }
                         ?>
@@ -60,6 +63,14 @@
                 while ($rowsFAT = mysqli_fetch_assoc($resFAT)) {
                     echo "<a class='list-group-item' href='index.php?class=building&building=" . $rowsFAT["BuildNum"] . "'>" . $rowsFAT["BuildNum"] . "</a>";
                 }
+            }break;
+            case 'upfile':{
+                echo "<a href='admin.php?class=upfile&type=student' class='list-group-item'>学生信息</a>";
+                echo "<a href='admin.php?class=upfile&type=score' class='list-group-item'>评分信息</a>";
+            } break;
+            case 'count':{
+
+                echo "<a href='admin.php?class=count&type=college' class='list-group-item'>学院</a>";
             }break;
         }
     }

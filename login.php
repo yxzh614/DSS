@@ -5,6 +5,9 @@
  * Time: 9:13
  * Date: 17/1/15
  */
+if(!defined('IN_SYS')){
+define('IN_SYS',true);
+}
 require_once ("setting.php");
 if(isset($_POST['submit'])&&$_POST["submit"]) {
     $userName = $_POST["userName"];
@@ -29,7 +32,11 @@ if(isset($_POST['submit'])&&$_POST["submit"]) {
 }
 ?>
 <div id="login">
-
+<div id="login-header">
+    <h1>寝室评分系统</h1>
+    <p>沈阳理工大学</p>
+</div>
+    <div id="login-form">
 <form role="form" action="login.php" method="post">
     <div class="form-group">
         <label for="inputusername">用户名</label>
@@ -41,5 +48,5 @@ if(isset($_POST['submit'])&&$_POST["submit"]) {
     </div>
     <input name="submit" type="submit" class="btn btn-default" value="登录" >
 </form>
-
+    </div>
 </div>

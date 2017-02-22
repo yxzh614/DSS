@@ -2,11 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: ak-hyeon-chal
- * Date: 17/1/16
- * Time: 16:08
+ * Date: 17/2/16
+ * Time: 14:08
  */
+if(!defined('IN_SYS')) {
+    define('IN_SYS', true);
+}
 require_once ("setting.php");
-include("upload_fun.php");
+include("upload_stu_info_fun.php");
 
 if($_POST['submit']&&$_POST["submit"]){
 
@@ -24,8 +27,10 @@ if($_POST['submit']&&$_POST["submit"]){
         echo $msg;
         ?>
         <script>
-            alert('导入成功');
-            window.location="index.php";
+            /*
+             alert('导入成功');
+             window.location="index.php";
+             */
         </script>
         <?php
     }
