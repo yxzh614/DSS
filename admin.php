@@ -31,6 +31,11 @@ if(isset($_GET["class"])) {
                             <input type="hidden" name="leadExcel" value="true">
                             <input type="submit" name="submit" value="导入"/>
                         </form>
+        <script>
+            window.onload = function () {
+                $("#loading").fadeOut();
+            }
+        </script>
                         <?php
                     }
                         break;
@@ -41,6 +46,11 @@ if(isset($_GET["class"])) {
                             <input type="hidden" name="leadExcel" value="true">
                             <input type="submit" name="submit" value="导入"/>
                         </form>
+        <script>
+            window.onload = function () {
+                $("#loading").fadeOut();
+            }
+        </script>
                         <?php
                     }
                         break;
@@ -61,9 +71,9 @@ if(isset($_GET["class"])) {
                                     <caption>按学院分类</caption>
                                     <thead>
                                     <tr>
-                                        <th>学院</th>
-                                        <th>年级</th>
-                                        <th>得分</th>
+                                        <th onclick="unmerge('TableScore','0');unmerge('TableScore','1');$.sortTable.sort('TableScore',0);merge('TableScore','0')" style="cursor: pointer;">学院</th>
+                                        <th onclick="unmerge('TableScore','0');unmerge('TableScore','1');$.sortTable.sort('TableScore',1);merge('TableScore','1')" style="cursor: pointer;">年级</th>
+                                        <th onclick="unmerge('TableScore','0');unmerge('TableScore','1');$.sortTable.sort('TableScore',2);" style="cursor: pointer;">得分</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -89,9 +99,9 @@ if(isset($_GET["class"])) {
         <script type="text/javascript">
             if(document.getElementById('TableScore')) {
                 merge('TableScore', '0');
-                window.onload = function () {
-                    $("#loading").fadeOut();
-                }
+            }
+            window.onload = function () {
+                $("#loading").fadeOut();
             }
         </script>
                                 <?php

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a53379ac-5dc6-4ad1-b08c-cc0e9d49c1f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setting.php" afterPath="$PROJECT_DIR$/setting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload_score_fun.php" afterPath="$PROJECT_DIR$/upload_score_fun.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,20 +50,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-475">
-              <caret line="104" column="68" lean-forward="true" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
+            <state relative-caret-position="190">
+              <caret line="169" column="118" lean-forward="false" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="118" />
               <folding>
                 <element signature="e#6#49#0#PHP" expanded="true" />
-                <marker date="1488344889414" expanded="true" signature="529:786" ph="SELECT s.Stu... tbl_student" />
-                <marker date="1488344889414" expanded="true" signature="829:870" ph="SELECT Name tbl_user" />
-                <marker date="1488344889414" expanded="true" signature="829:871" ph="SELECT Name tbl_user" />
-                <marker date="1488344889414" expanded="true" signature="829:892" ph="SELECT Name tbl_user" />
-                <marker date="1488344889414" expanded="true" signature="829:893" ph="SELECT Name tbl_user" />
-                <marker date="1488344889414" expanded="true" signature="3531:3860" ph="SELECT s.Stu... tbl_student" />
-                <marker date="1488344889414" expanded="true" signature="5622:6071" ph="SELECT s.Stu... tbl_student" />
+                <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+                <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+                <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+                <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+                <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+                <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
+                <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
               </folding>
             </state>
           </provider>
@@ -109,20 +104,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state relative-caret-position="216">
+              <caret line="75" column="172" lean-forward="true" selection-start-line="75" selection-start-column="172" selection-end-line="75" selection-end-column="172" />
               <folding>
                 <element signature="e#6#35#0#PHP" expanded="true" />
-                <element signature="e#324#1849#0#PHP" expanded="false" />
-                <element signature="e#368#1835#0#PHP" expanded="false" />
-                <element signature="e#413#1297#0#PHP" expanded="false" />
-                <element signature="e#1318#1817#0#PHP" expanded="false" />
-                <marker date="1488097021783" expanded="true" signature="2065:2189" ph="select Colle... tbl_col_dep_grade" />
-                <marker date="1488097021783" expanded="true" signature="3505:3579" ph="SELECT AVG(S... tbl_studentscore" />
-                <marker date="1488097021783" expanded="true" signature="3505:3609" ph="SELECT AVG(S... tbl_studentscore" />
+                <marker date="1488345727656" expanded="true" signature="2329:2453" ph="select Colle... tbl_col_dep_grade" />
+                <marker date="1488345727656" expanded="true" signature="4178:4252" ph="SELECT AVG(S... tbl_studentscore" />
+                <marker date="1488345727656" expanded="true" signature="4178:4282" ph="SELECT AVG(S... tbl_studentscore" />
               </folding>
             </state>
           </provider>
@@ -144,18 +135,18 @@
             <state relative-caret-position="1083">
               <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
-                <marker date="1487748169656" expanded="true" signature="2411:2423" ph="INSERT INTO tbl_studentscore... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2515" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2535" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2553" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2617" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2636" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2650" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2652" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2661" ph="INSERT INTO tbl_studentscore... " />
-                <marker date="1487748169656" expanded="true" signature="2411:2687" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1487748169656" expanded="true" signature="2555:2615" ph="SELECT tbl_u... tbl_user" />
-                <marker date="1487748169656" expanded="true" signature="2555:2616" ph="SELECT tbl_u... tbl_user" />
+                <marker date="1488344963990" expanded="true" signature="2411:2423" ph="INSERT INTO tbl_studentscore... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2515" ph="INSERT INTO `tbl_studentscore`... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2535" ph="INSERT INTO `tbl_studentscore`... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2553" ph="INSERT INTO `tbl_studentscore`... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2617" ph="INSERT INTO `tbl_studentscore`... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2636" ph="INSERT INTO `tbl_studentscore`... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2650" ph="INSERT INTO `tbl_studentscore`... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2652" ph="INSERT INTO `tbl_studentscore`... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2661" ph="INSERT INTO tbl_studentscore... " />
+                <marker date="1488344963990" expanded="true" signature="2411:2687" ph="INSERT INTO `tbl_studentscore`... " />
+                <marker date="1488344963990" expanded="true" signature="2555:2615" ph="SELECT tbl_u... tbl_user" />
+                <marker date="1488344963990" expanded="true" signature="2555:2616" ph="SELECT tbl_u... tbl_user" />
               </folding>
             </state>
           </provider>
@@ -243,10 +234,10 @@
         <option value="$PROJECT_DIR$/leftbar.php" />
         <option value="$PROJECT_DIR$/upload_score_fun.php" />
         <option value="$PROJECT_DIR$/setting.php" />
-        <option value="$PROJECT_DIR$/admin.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/admin.php" />
       </list>
     </option>
   </component>
@@ -430,16 +421,16 @@
       <workItem from="1488096178895" duration="5101000" />
       <workItem from="1488190571061" duration="2492000" />
       <workItem from="1488202633367" duration="432000" />
-      <workItem from="1488342356488" duration="2127000" />
+      <workItem from="1488342356488" duration="3560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129989000" />
+    <option name="totallyTimeSpent" value="131422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1554" height="904" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2751004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -540,13 +531,13 @@
           <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488344889414" expanded="true" signature="529:786" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="829:870" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:871" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:892" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:893" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="3531:3860" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="5622:6071" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
           </folding>
         </state>
       </provider>
@@ -593,13 +584,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488344889414" expanded="true" signature="529:786" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="829:870" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:871" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:892" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:893" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="3531:3860" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="5622:6071" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
           </folding>
         </state>
       </provider>
@@ -646,13 +637,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488344889414" expanded="true" signature="529:786" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="829:870" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:871" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:892" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:893" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="3531:3860" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="5622:6071" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
           </folding>
         </state>
       </provider>
@@ -688,13 +679,13 @@
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488344889414" expanded="true" signature="529:786" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="829:870" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:871" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:892" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:893" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="3531:3860" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="5622:6071" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
           </folding>
         </state>
       </provider>
@@ -872,18 +863,18 @@
         <state relative-caret-position="1083">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <marker date="1487748169656" expanded="true" signature="2411:2423" ph="INSERT INTO tbl_studentscore... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2515" ph="INSERT INTO `tbl_studentscore`... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2535" ph="INSERT INTO `tbl_studentscore`... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2553" ph="INSERT INTO `tbl_studentscore`... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2617" ph="INSERT INTO `tbl_studentscore`... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2636" ph="INSERT INTO `tbl_studentscore`... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2650" ph="INSERT INTO `tbl_studentscore`... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2652" ph="INSERT INTO `tbl_studentscore`... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2661" ph="INSERT INTO tbl_studentscore... " />
-            <marker date="1487748169656" expanded="true" signature="2411:2687" ph="INSERT INTO `tbl_studentscore`... " />
-            <marker date="1487748169656" expanded="true" signature="2555:2615" ph="SELECT tbl_u... tbl_user" />
-            <marker date="1487748169656" expanded="true" signature="2555:2616" ph="SELECT tbl_u... tbl_user" />
+            <marker date="1488344963990" expanded="true" signature="2411:2423" ph="INSERT INTO tbl_studentscore... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2515" ph="INSERT INTO `tbl_studentscore`... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2535" ph="INSERT INTO `tbl_studentscore`... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2553" ph="INSERT INTO `tbl_studentscore`... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2617" ph="INSERT INTO `tbl_studentscore`... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2636" ph="INSERT INTO `tbl_studentscore`... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2650" ph="INSERT INTO `tbl_studentscore`... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2652" ph="INSERT INTO `tbl_studentscore`... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2661" ph="INSERT INTO tbl_studentscore... " />
+            <marker date="1488344963990" expanded="true" signature="2411:2687" ph="INSERT INTO `tbl_studentscore`... " />
+            <marker date="1488344963990" expanded="true" signature="2555:2615" ph="SELECT tbl_u... tbl_user" />
+            <marker date="1488344963990" expanded="true" signature="2555:2616" ph="SELECT tbl_u... tbl_user" />
           </folding>
         </state>
       </provider>
@@ -893,23 +884,6 @@
         <state relative-caret-position="437">
           <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#35#0#PHP" expanded="true" />
-            <element signature="e#324#1849#0#PHP" expanded="false" />
-            <element signature="e#368#1835#0#PHP" expanded="false" />
-            <element signature="e#413#1297#0#PHP" expanded="false" />
-            <element signature="e#1318#1817#0#PHP" expanded="false" />
-            <marker date="1488097021783" expanded="true" signature="2065:2189" ph="select Colle... tbl_col_dep_grade" />
-            <marker date="1488097021783" expanded="true" signature="3505:3579" ph="SELECT AVG(S... tbl_studentscore" />
-            <marker date="1488097021783" expanded="true" signature="3505:3609" ph="SELECT AVG(S... tbl_studentscore" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,17 +915,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="104" column="68" lean-forward="true" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
+        <state relative-caret-position="190">
+          <caret line="169" column="118" lean-forward="false" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="118" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488344889414" expanded="true" signature="529:786" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="829:870" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:871" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:892" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="829:893" ph="SELECT Name tbl_user" />
-            <marker date="1488344889414" expanded="true" signature="3531:3860" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488344889414" expanded="true" signature="5622:6071" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="75" column="172" lean-forward="true" selection-start-line="75" selection-start-column="172" selection-end-line="75" selection-end-column="172" />
+          <folding>
+            <element signature="e#6#35#0#PHP" expanded="true" />
+            <marker date="1488345727656" expanded="true" signature="2329:2453" ph="select Colle... tbl_col_dep_grade" />
+            <marker date="1488345727656" expanded="true" signature="4178:4252" ph="SELECT AVG(S... tbl_studentscore" />
+            <marker date="1488345727656" expanded="true" signature="4178:4282" ph="SELECT AVG(S... tbl_studentscore" />
           </folding>
         </state>
       </provider>

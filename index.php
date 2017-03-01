@@ -19,7 +19,6 @@ else {
     <div id="mainarea">
         <div id="loading"></div>
     <?php
-
     if (isset($_GET["class"])) {
         switch ($_GET["class"]){
             case 'teacher':{
@@ -108,10 +107,10 @@ GROUP BY
                             <caption>按学院分类<p id="ascore"></p></caption>
                             <thead>
                             <tr>
-                                <th>学号</th>
-                                <th>姓名</th>
-                                <th>指导员</th>
-                                <th>得分</th>
+                                <th onclick="$.sortTable.sort('TableScore',0)" style="cursor: pointer;">学号</th>
+                                <th onclick="$.sortTable.sort('TableScore',1)" style="cursor: pointer;">姓名</th>
+                                <th onclick="$.sortTable.sort('TableScore',2)" style="cursor: pointer;">指导员</th>
+                                <th onclick="$.sortTable.sort('TableScore',3)" style="cursor: pointer;">得分</th>
                             </tr>
                             </thead>
                             <tbody>
