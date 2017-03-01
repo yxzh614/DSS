@@ -1,5 +1,6 @@
 table tr td{
-text-align: center;
+    text-align: center;
+    vertical-align:middle;
 }
 
 #login {
@@ -25,4 +26,13 @@ body{
 #tri {
     float: right;
     margin-top: 7px;
+}
+#tablescore tbody tr td{
+    vertical-align: middle;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }

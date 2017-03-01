@@ -11,6 +11,7 @@ require "leftbar.php";
 include "navbar.php";
 ?>
     <div id="mainarea">
+        <div id="loading"></div>
 <?php
 if(isset($_GET["class"])) {
     switch ($_GET["class"]) {
@@ -56,7 +57,7 @@ if(isset($_GET["class"])) {
                         if ($resFAC = mysqli_query($db, $sqlFindAllCollege)) {
                             while ($rowsFAC = mysqli_fetch_assoc($resFAC)) {
                                 ?>
-                                <table class="table table-bordered">
+                                <table class="table table-bordered" id="TableScore">
                                     <caption>按学院分类</caption>
                                     <thead>
                                     <tr>
@@ -85,6 +86,14 @@ if(isset($_GET["class"])) {
                                     ?>
                                     </tbody>
                                 </table>
+        <script type="text/javascript">
+            if(document.getElementById('TableScore')) {
+                merge('TableScore', '0');
+                window.onload = function () {
+                    $("#loading").fadeOut();
+                }
+            }
+        </script>
                                 <?php
                             }
                         }

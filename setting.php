@@ -22,11 +22,10 @@ mysqli_query($db,"set names utf8");
 if(!defined('IN_SYS')) {
     exit('禁止访问');
 }//限制访问页面
-
-
 ?>
 <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 <link href="css/main.css" type="text/css" rel="stylesheet">
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 <meta charset="utf-8">
