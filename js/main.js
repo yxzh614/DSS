@@ -14,7 +14,12 @@ $(document).ready(function() {
         totalRow/=count;
     $('#ascore').text('平均分:'+totalRow);
 
-});
+}
+);
+function inputName(inputid,o) {
+    var input=document.getElementById(inputid);
+    input.value=o.innerHTML;
+}//end inputName
 function merge(tableId,col) {
     var tr = document.getElementById(tableId);
     for (var i = 1; i < tr.rows.length; i++) {                //表示数据内容的第二行
@@ -33,7 +38,7 @@ function merge(tableId,col) {
             }
         }
     }
-}
+}//end merge
 function unmerge(tableId,col) {
     var tr = document.getElementById(tableId);
     for (var i = 1; i < tr.rows.length; i++) {                //表示数据内容的第二行
@@ -46,7 +51,7 @@ function unmerge(tableId,col) {
 
         }
     }
-}
+}//end unmerge
 (function($){
     //插件
     $.extend($,{
@@ -83,4 +88,57 @@ function unmerge(tableId,col) {
             }
         }
     });
-})(jQuery);
+})(jQuery);//排序
+
+var xmlHttp;
+
+function showHint(str)
+{
+    if (str.length==0)
+    {
+        return
+    }
+    xmlHttp=GetXmlHttpObject();
+    if (xmlHttp==null)
+    {
+        alert ("Browser does not support HTTP Request");
+        return
+    }
+    var url="getTeacher.php";
+    url=url+"?col="+str;
+    url=url+"&sid="+Math.random();
+    xmlHttp.onreadystatechange=stateChanged;
+    xmlHttp.open("GET",url,true);
+    xmlHttp.send(null)
+}
+
+function stateChanged()
+{
+    if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+    {
+        document.getElementById("TeacherList").innerHTML=xmlHttp.responseText
+    }
+}
+
+function GetXmlHttpObject()
+{
+    var xmlHttp=null;
+    try
+    {
+        // Firefox, Opera 8.0+, Safari
+        xmlHttp=new XMLHttpRequest();
+    }
+    catch (e)
+    {
+        // Internet Explorer
+        try
+        {
+            xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+        }
+        catch (e)
+        {
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    }
+    return xmlHttp;
+}
