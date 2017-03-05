@@ -71,7 +71,7 @@ require_once ("setting.php");
                 ?>
                 <form>
         <div class="input-group">
-            <input type="text" class="form-control" aria-label="..." title="学院" id="InputCol" value="-">
+            <input type="text" class="form-control" aria-label="..." title="学院" id="InputCol" value="">
             <div class="input-group-btn">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">学院<span class="caret"></span></button>
                 <ul class="dropdown-menu dropdown-menu-right">
@@ -86,26 +86,24 @@ require_once ("setting.php");
             </div><!-- /btn-group -->
         </div><!-- /input-group -->
         <div class="input-group">
-            <input type="text" class="form-control" aria-label="..." title="年级" id="InputTeacher">
+            <input type="text" class="form-control" aria-label="..." title="年级" id="InputGrade">
             <div class="input-group-btn">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  onclick=showHint(document.getElementById('InputCol').value)>选择年级<span class="caret"></span></button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  onclick=showHint(document.getElementById('InputCol').value)>年级<span class="caret"></span></button>
                 <ul class="dropdown-menu dropdown-menu-right" id="TeacherList">
-                    <li><a href="#">信息</a></li>
                 </ul>
             </div><!-- /btn-group -->
         </div><!-- /input-group -->
-        <div class="input-group">
-            <input type="text" class="form-control" aria-label="..." title="指导员">
-            <div class="input-group-btn">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择指导员<span class="caret"></span></button>
-                <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#">信息</a></li>
-                    <li><a href="#">科技</a></li>
-                    <li><a href="#">工程</a></li>
-                </ul>
-            </div><!-- /btn-group -->
-        </div><!-- /input-group -->
-        </form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="..." title="年级" id="InputTeacher">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  onclick=showHint(document.getElementById('InputCol').value)>学年<span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right" id="TeacherList">
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+
+                    <a onclick="getaverage()" class="btn btn-default" name="submit">确定</a>
+                </form>
                 <?php
             }break;
         }

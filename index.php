@@ -84,6 +84,19 @@ GROUP BY
                         echo $sqlTeaToStu;
                     }
                 }
+                else{
+                    ?>
+        <div class="jumbotron" style="background-color: transparent">
+            <h1>请选择指导员</h1>
+        </div>
+        <script type="text/javascript">
+            window.onload=function() {
+                $("#loading").fadeOut();
+            }
+
+        </script>
+                    <?php
+                }
             } break;
             case 'grade': {
                 if (isset($_GET["grade"])) {
@@ -136,7 +149,19 @@ GROUP BY
             </script>
                         <?php
                     }
-                }
+                }else{
+                        ?>
+        <div class="jumbotron" style="background-color: transparent">
+            <h1>请选择学院与年级</h1>
+        </div>
+        <script type="text/javascript">
+            window.onload=function() {
+                $("#loading").fadeOut();
+            }
+
+        </script>
+    <?php
+                        }
             }
             break;
             case 'building':{
@@ -212,10 +237,39 @@ GROUP BY
             </script>
             <?php
         }
-        }
+        }else{
+            ?>
+        <div class="jumbotron" style="background-color: transparent">
+            <h1>请选择宿舍楼</h1>
+        </div>
+        <script type="text/javascript">
+            window.onload=function() {
+                $("#loading").fadeOut();
+            }
+
+        </script>
+    <?php
+            }
             } break;
             default:;
         }
+    }
+    else{
+        ?>
+        <div class="jumbotron" style="background-color: transparent">
+            <h1>欢迎使用宿舍管理系统</h1>
+            <p>沈阳理工大学</p>
+            <p><a class="btn btn-primary btn-lg" href="admin.php?class=count" role="button">统计</a>
+            <a class="btn btn-primary btn-lg" href="index.php?class=grade" role="button">学院</a>
+            <a class="btn btn-primary btn-lg" href="admin.php?class=building" role="button">宿舍楼</a></p>
+        </div>
+        <script type="text/javascript">
+                window.onload=function() {
+                    $("#loading").fadeOut();
+                }
+
+        </script>
+        <?php
     }
     ?>
     </div>

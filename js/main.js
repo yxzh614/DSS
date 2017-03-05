@@ -94,17 +94,13 @@ var xmlHttp;
 
 function showHint(str)
 {
-    if (str.length==0)
-    {
-        return
-    }
     xmlHttp=GetXmlHttpObject();
     if (xmlHttp==null)
     {
         alert ("Browser does not support HTTP Request");
         return
     }
-    var url="getTeacher.php";
+    var url="getGrade.php";
     url=url+"?col="+str;
     url=url+"&sid="+Math.random();
     xmlHttp.onreadystatechange=stateChanged;
@@ -141,4 +137,8 @@ function GetXmlHttpObject()
         }
     }
     return xmlHttp;
+}
+
+function getaverage() {
+    window.location="admin.php?class=count&col="+document.getElementById("InputCol").value+"&grade="+document.getElementById("InputGrade").value;
 }

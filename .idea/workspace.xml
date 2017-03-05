@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a53379ac-5dc6-4ad1-b08c-cc0e9d49c1f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/getTeacher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/2fad4c80-1ffe-4a27-b0ee-ebd40148ff9b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/2fad4c80-1ffe-4a27-b0ee-ebd40148ff9b.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leftbar.php" afterPath="$PROJECT_DIR$/leftbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getTeacher.php" afterPath="$PROJECT_DIR$/getGrade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,18 +72,42 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="197">
+              <caret line="233" column="48" lean-forward="true" selection-start-line="233" selection-start-column="48" selection-end-line="233" selection-end-column="48" />
               <folding>
                 <element signature="e#6#49#0#PHP" expanded="true" />
-                <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
-                <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
-                <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
-                <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
-                <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
-                <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
-                <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <marker date="1488710893477" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+                <marker date="1488710893477" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+                <marker date="1488710893477" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+                <marker date="1488710893477" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+                <marker date="1488710893477" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+                <marker date="1488710893477" expanded="true" signature="3885:4214" ph="SELECT s.Stu... tbl_student" />
+                <marker date="1488710893477" expanded="true" signature="6584:7033" ph="SELECT s.Stu... tbl_student" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/navbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1178">
+              <caret line="62" column="60" lean-forward="true" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,7 +128,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
+            <state relative-caret-position="266">
               <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding />
             </state>
@@ -114,24 +138,31 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="108" column="34" lean-forward="false" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
+            <state relative-caret-position="684">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="false" />
+                <element signature="e#77#391#0" expanded="false" />
+                <element signature="n#!!block;n#inputName#0" expanded="false" />
+                <element signature="n#!!block;n#merge#0" expanded="false" />
+                <element signature="n#!!block;n#unmerge#0" expanded="false" />
+                <element signature="e#1739#2980#0" expanded="false" />
+                <element signature="n#!!block;n#GetXmlHttpObject#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getTeacher.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getTeacher.php">
+      <file leaf-file-name="getGrade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getGrade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+            <state relative-caret-position="342">
+              <caret line="23" column="106" lean-forward="false" selection-start-line="23" selection-start-column="106" selection-end-line="23" selection-end-column="106" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
-                <marker date="1488553936127" expanded="true" signature="267:445" ph="select DISTI... tbl_col_dep_grade" />
-                <marker date="1488553936127" expanded="true" signature="329:428" ph="SELECT tbl_c... tbl_college_name" />
+                <marker date="1488634704080" expanded="true" signature="288:470" ph="select DISTI... tbl_col_dep_grade" />
+                <marker date="1488634704080" expanded="true" signature="350:453" ph="SELECT tbl_c... tbl_college_name" />
+                <marker date="1488634704080" expanded="true" signature="517:576" ph="SELECT DISTI... tbl_col_dep_grade" />
               </folding>
             </state>
           </provider>
@@ -140,78 +171,39 @@
       <file leaf-file-name="leftbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leftbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="73" column="102" lean-forward="false" selection-start-line="73" selection-start-column="102" selection-end-line="73" selection-end-column="102" />
+            <state relative-caret-position="1406">
+              <caret line="88" column="96" lean-forward="false" selection-start-line="88" selection-start-column="96" selection-end-line="88" selection-end-column="96" />
               <folding>
                 <element signature="e#265#881#0#PHP" expanded="false" />
-                <marker date="1488554390978" expanded="true" signature="320:367" ph="select Name,... tbl_user" />
-                <marker date="1488554390978" expanded="true" signature="947:1010" ph="select House... tbl_college_name" />
-                <marker date="1488554390978" expanded="true" signature="1781:1840" ph="select Grade... tbl_col_dep_grade" />
-                <marker date="1488554390978" expanded="true" signature="1781:1880" ph="select DISTI... tbl_col_dep_grade" />
-                <marker date="1488554390978" expanded="true" signature="1781:1881" ph="select DISTI... tbl_col_dep_grade" />
-                <marker date="1488554390978" expanded="true" signature="2620:2653" ph="select Build... tbl_building" />
-                <marker date="1488554390978" expanded="true" signature="3800:3863" ph="select House... tbl_college_name" />
-                <marker date="1488554390978" expanded="true" signature="4291:4881" ph="..." />
-                <marker date="1488554390978" expanded="true" signature="4432:4847" ph="..." />
-                <marker date="1488554390978" expanded="true" signature="4758:4828" ph="..." />
-                <marker date="1488554390978" expanded="true" signature="4936:5528" ph="..." />
-                <marker date="1488554390978" expanded="true" signature="5060:5494" ph="..." />
-                <marker date="1488554390978" expanded="true" signature="5309:5475" ph="..." />
-                <marker date="1488554390978" expanded="true" signature="5646:5850" ph="..." />
-                <marker date="1488554390978" expanded="true" signature="5699:5744" ph="{...}" />
-                <marker date="1488554390978" expanded="true" signature="5779:5841" ph="{...}" />
+                <marker date="1488634515958" expanded="true" signature="320:367" ph="select Name,... tbl_user" />
+                <marker date="1488634515958" expanded="true" signature="947:1010" ph="select House... tbl_college_name" />
+                <marker date="1488634515958" expanded="true" signature="1781:1840" ph="select Grade... tbl_col_dep_grade" />
+                <marker date="1488634515958" expanded="true" signature="1781:1880" ph="select DISTI... tbl_col_dep_grade" />
+                <marker date="1488634515958" expanded="true" signature="1781:1881" ph="select DISTI... tbl_col_dep_grade" />
+                <marker date="1488634515958" expanded="true" signature="2620:2653" ph="select Build... tbl_building" />
+                <marker date="1488634515958" expanded="true" signature="3799:3862" ph="select House... tbl_college_name" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="323">
+              <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
               <folding>
                 <element signature="e#6#35#0#PHP" expanded="true" />
-                <element signature="e#576#1512#0#PHP" expanded="false" />
-                <element signature="e#1525#2112#0#PHP" expanded="false" />
-                <element signature="e#2186#5599#0#PHP" expanded="false" />
-                <marker date="1488548567196" expanded="true" signature="2445:2569" ph="SELECT DISTI... tbl_col_dep_grade" />
-                <marker date="1488548567196" expanded="true" signature="4039:4109" ph="SELECT Name tbl_user" />
-                <marker date="1488548567196" expanded="true" signature="4568:4674" ph="SELECT AVG(S... tbl_studentscore" />
+                <element signature="e#415#2118#0#PHP" expanded="false" />
+                <element signature="e#521#1457#0#PHP" expanded="false" />
+                <element signature="e#1470#2057#0#PHP" expanded="false" />
+                <element signature="e#6670#9541#0#PHP" expanded="false" />
+                <marker date="1488634874289" expanded="true" signature="2341:2442" ph="SELECT DISTI... tbl_col_dep_grade" />
+                <marker date="1488634874289" expanded="true" signature="2341:2465" ph="SELECT DISTI... tbl_col_dep_grade" />
+                <marker date="1488634874289" expanded="true" signature="2536:2718" ph="SELECT DISTI... tbl_col_dep_grade" />
+                <marker date="1488634874289" expanded="true" signature="2854:3040" ph="SELECT DISTI... tbl_col_dep_grade" />
+                <marker date="1488634874289" expanded="true" signature="3110:3325" ph="SELECT DISTI... tbl_col_dep_grade" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload_score_fun.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload_score_fun.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding>
-                <marker date="1488344963990" expanded="true" signature="2411:2423" ph="INSERT INTO tbl_studentscore... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2515" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2535" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2553" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2617" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2636" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2650" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2652" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2661" ph="INSERT INTO tbl_studentscore... " />
-                <marker date="1488344963990" expanded="true" signature="2411:2687" ph="INSERT INTO `tbl_studentscore`... " />
-                <marker date="1488344963990" expanded="true" signature="2555:2615" ph="SELECT tbl_u... tbl_user" />
-                <marker date="1488344963990" expanded="true" signature="2555:2616" ph="SELECT tbl_u... tbl_user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setting.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setting.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -219,7 +211,7 @@
       <file leaf-file-name="upload_stu_info_fun.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload_stu_info_fun.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
+            <state relative-caret-position="1235">
               <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
               <folding>
                 <marker date="1487312224299" expanded="true" signature="2570:2654" ph="INSERT INTO `tbl_student`... " />
@@ -270,14 +262,15 @@
         <option value="$PROJECT_DIR$/upload_stu_info_fun.php" />
         <option value="$PROJECT_DIR$/upload_score_fun.php" />
         <option value="$PROJECT_DIR$/setting.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/admin.php" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/gethint.php" />
         <option value="$PROJECT_DIR$/getTeacher.php" />
         <option value="$PROJECT_DIR$/leftbar.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/getGrade.php" />
+        <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/navbar.php" />
       </list>
     </option>
   </component>
@@ -309,7 +302,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -353,6 +345,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,33 +457,37 @@
       <workItem from="1488342356488" duration="3560000" />
       <workItem from="1488424672792" duration="5402000" />
       <workItem from="1488509715106" duration="14447000" />
+      <workItem from="1488588990263" duration="4184000" />
+      <workItem from="1488610685894" duration="3757000" />
+      <workItem from="1488631616380" duration="3358000" />
+      <workItem from="1488710266908" duration="756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151271000" />
+    <option name="totallyTimeSpent" value="163326000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1554" height="904" extended-state="0" />
-    <editor active="false" />
+    <frame x="54" y="-8" width="1554" height="904" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15194109" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285528" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285528" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +498,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -510,9 +507,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -565,13 +560,17 @@
           <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <marker date="1488710893477" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="3885:4214" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="6584:7033" ph="SELECT s.Stu... tbl_student" />
           </folding>
         </state>
       </provider>
@@ -618,13 +617,17 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <marker date="1488710893477" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="3885:4214" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="6584:7033" ph="SELECT s.Stu... tbl_student" />
           </folding>
         </state>
       </provider>
@@ -671,13 +674,17 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <marker date="1488710893477" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="3885:4214" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="6584:7033" ph="SELECT s.Stu... tbl_student" />
           </folding>
         </state>
       </provider>
@@ -713,13 +720,17 @@
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <marker date="1488710893477" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="3885:4214" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="6584:7033" ph="SELECT s.Stu... tbl_student" />
           </folding>
         </state>
       </provider>
@@ -835,38 +846,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload_stu_dor_fun.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="79" column="40" lean-forward="false" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
           <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
+            <element signature="e#6#92#0#PHP" expanded="false" />
             <marker date="1487223618243" expanded="true" signature="2410:2577" ph="INSERT INTO `tbl_studentscore`... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="57" column="114" lean-forward="true" selection-start-line="57" selection-start-column="114" selection-end-line="57" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload_score_fun.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="1083">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
             <marker date="1488344963990" expanded="true" signature="2411:2423" ph="INSERT INTO tbl_studentscore... " />
@@ -895,7 +888,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload_stu_info_fun.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
+        <state relative-caret-position="1235">
           <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
           <folding>
             <marker date="1487312224299" expanded="true" signature="2570:2654" ph="INSERT INTO `tbl_student`... " />
@@ -905,6 +898,22 @@
             <marker date="1487312224299" expanded="true" signature="2735:2834" ph="INSERT INTO `tbl_col_dep_grade`... " />
             <marker date="1487312224299" expanded="true" signature="2880:2965" ph="INSERT INTO `tbl_stu_tea`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -919,92 +928,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/leftbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+        <state relative-caret-position="1406">
+          <caret line="88" column="96" lean-forward="false" selection-start-line="88" selection-start-column="96" selection-end-line="88" selection-end-column="96" />
           <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-            <marker date="1488553936127" expanded="true" signature="267:445" ph="select DISTI... tbl_col_dep_grade" />
-            <marker date="1488553936127" expanded="true" signature="329:428" ph="SELECT tbl_c... tbl_college_name" />
+            <element signature="e#265#881#0#PHP" expanded="false" />
+            <marker date="1488634515958" expanded="true" signature="320:367" ph="select Name,... tbl_user" />
+            <marker date="1488634515958" expanded="true" signature="947:1010" ph="select House... tbl_college_name" />
+            <marker date="1488634515958" expanded="true" signature="1781:1840" ph="select Grade... tbl_col_dep_grade" />
+            <marker date="1488634515958" expanded="true" signature="1781:1880" ph="select DISTI... tbl_col_dep_grade" />
+            <marker date="1488634515958" expanded="true" signature="1781:1881" ph="select DISTI... tbl_col_dep_grade" />
+            <marker date="1488634515958" expanded="true" signature="2620:2653" ph="select Build... tbl_building" />
+            <marker date="1488634515958" expanded="true" signature="3799:3862" ph="select House... tbl_college_name" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="108" column="34" lean-forward="false" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
+        <state relative-caret-position="684">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="false" />
+            <element signature="e#77#391#0" expanded="false" />
+            <element signature="n#!!block;n#inputName#0" expanded="false" />
+            <element signature="n#!!block;n#merge#0" expanded="false" />
+            <element signature="n#!!block;n#unmerge#0" expanded="false" />
+            <element signature="e#1739#2980#0" expanded="false" />
+            <element signature="n#!!block;n#GetXmlHttpObject#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leftbar.php">
+    <entry file="file://$PROJECT_DIR$/getGrade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="73" column="102" lean-forward="false" selection-start-line="73" selection-start-column="102" selection-end-line="73" selection-end-column="102" />
+        <state relative-caret-position="342">
+          <caret line="23" column="106" lean-forward="false" selection-start-line="23" selection-start-column="106" selection-end-line="23" selection-end-column="106" />
           <folding>
-            <element signature="e#265#881#0#PHP" expanded="false" />
-            <marker date="1488554390978" expanded="true" signature="320:367" ph="select Name,... tbl_user" />
-            <marker date="1488554390978" expanded="true" signature="947:1010" ph="select House... tbl_college_name" />
-            <marker date="1488554390978" expanded="true" signature="1781:1840" ph="select Grade... tbl_col_dep_grade" />
-            <marker date="1488554390978" expanded="true" signature="1781:1880" ph="select DISTI... tbl_col_dep_grade" />
-            <marker date="1488554390978" expanded="true" signature="1781:1881" ph="select DISTI... tbl_col_dep_grade" />
-            <marker date="1488554390978" expanded="true" signature="2620:2653" ph="select Build... tbl_building" />
-            <marker date="1488554390978" expanded="true" signature="3800:3863" ph="select House... tbl_college_name" />
-            <marker date="1488554390978" expanded="true" signature="4291:4881" ph="..." />
-            <marker date="1488554390978" expanded="true" signature="4432:4847" ph="..." />
-            <marker date="1488554390978" expanded="true" signature="4758:4828" ph="..." />
-            <marker date="1488554390978" expanded="true" signature="4936:5528" ph="..." />
-            <marker date="1488554390978" expanded="true" signature="5060:5494" ph="..." />
-            <marker date="1488554390978" expanded="true" signature="5309:5475" ph="..." />
-            <marker date="1488554390978" expanded="true" signature="5646:5850" ph="..." />
-            <marker date="1488554390978" expanded="true" signature="5699:5744" ph="{...}" />
-            <marker date="1488554390978" expanded="true" signature="5779:5841" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#49#0#PHP" expanded="true" />
-            <marker date="1488345215952" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
-            <marker date="1488345215952" expanded="true" signature="3530:3859" ph="SELECT s.Stu... tbl_student" />
-            <marker date="1488345215952" expanded="true" signature="5893:6342" ph="SELECT s.Stu... tbl_student" />
+            <element signature="e#6#91#0#PHP" expanded="true" />
+            <marker date="1488634704080" expanded="true" signature="288:470" ph="select DISTI... tbl_col_dep_grade" />
+            <marker date="1488634704080" expanded="true" signature="350:453" ph="SELECT tbl_c... tbl_college_name" />
+            <marker date="1488634704080" expanded="true" signature="517:576" ph="SELECT DISTI... tbl_col_dep_grade" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="323">
+          <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
           <folding>
             <element signature="e#6#35#0#PHP" expanded="true" />
-            <element signature="e#576#1512#0#PHP" expanded="false" />
-            <element signature="e#1525#2112#0#PHP" expanded="false" />
-            <element signature="e#2186#5599#0#PHP" expanded="false" />
-            <marker date="1488548567196" expanded="true" signature="2445:2569" ph="SELECT DISTI... tbl_col_dep_grade" />
-            <marker date="1488548567196" expanded="true" signature="4039:4109" ph="SELECT Name tbl_user" />
-            <marker date="1488548567196" expanded="true" signature="4568:4674" ph="SELECT AVG(S... tbl_studentscore" />
+            <element signature="e#415#2118#0#PHP" expanded="false" />
+            <element signature="e#521#1457#0#PHP" expanded="false" />
+            <element signature="e#1470#2057#0#PHP" expanded="false" />
+            <element signature="e#6670#9541#0#PHP" expanded="false" />
+            <marker date="1488634874289" expanded="true" signature="2341:2442" ph="SELECT DISTI... tbl_col_dep_grade" />
+            <marker date="1488634874289" expanded="true" signature="2341:2465" ph="SELECT DISTI... tbl_col_dep_grade" />
+            <marker date="1488634874289" expanded="true" signature="2536:2718" ph="SELECT DISTI... tbl_col_dep_grade" />
+            <marker date="1488634874289" expanded="true" signature="2854:3040" ph="SELECT DISTI... tbl_col_dep_grade" />
+            <marker date="1488634874289" expanded="true" signature="3110:3325" ph="SELECT DISTI... tbl_col_dep_grade" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="233" column="48" lean-forward="true" selection-start-line="233" selection-start-column="48" selection-end-line="233" selection-end-column="48" />
+          <folding>
+            <element signature="e#6#49#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <marker date="1488710893477" expanded="true" signature="528:785" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="828:869" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:870" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:891" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="828:892" ph="SELECT Name tbl_user" />
+            <marker date="1488710893477" expanded="true" signature="3885:4214" ph="SELECT s.Stu... tbl_student" />
+            <marker date="1488710893477" expanded="true" signature="6584:7033" ph="SELECT s.Stu... tbl_student" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="62" column="60" lean-forward="true" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
