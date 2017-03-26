@@ -6,7 +6,7 @@ if(!defined('IN_SYS')){
     define('IN_SYS',true);
 }
 if(!isset($_COOKIE["flag"])) {//登录
-    require_once("login.php");
+require_once("login.php");
 }
 else{
 
@@ -98,7 +98,7 @@ else{
                         <th onclick="unmerge('TableScore','0');unmerge('TableScore','1');$.sortTable.sort('TableScore',1);merge('TableScore','1');merge('TableScore','0')"
                             style="cursor: pointer;">年级
                         </th>
-                        <th>daoyuan</th>
+                        <th>导员</th>
                         <th onclick="unmerge('TableScore','0');unmerge('TableScore','1');$.sortTable.sort('TableScore',3);"
                             style="cursor: pointer;">得分
                         </th>
@@ -153,7 +153,7 @@ else{
                         <th onclick="unmerge('TableScore','0');unmerge('TableScore','1');$.sortTable.sort('TableScore',1);merge('TableScore','1');merge('TableScore','0')"
                             style="cursor: pointer;">年级
                         </th>
-                        <th>daoyuan</th>
+                        <th>导员</th>
                         <th onclick="unmerge('TableScore','0');unmerge('TableScore','1');$.sortTable.sort('TableScore',3);"
                             style="cursor: pointer;">得分
                         </th>
@@ -196,6 +196,24 @@ else{
             }
             }
                 break;
+                case 'modify':{
+                    ?>
+                    <form  class="navbar-form navbar-left" action="search.php" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="target" placeholder="输入学号">
+                </div>
+                        <input type="hidden" name="type" value="1">
+                <input type="submit" name="submit" class="btn btn-default" value="搜索">
+            </form>
+                <script type="text/javascript">
+                    if (document.getElementById('TableScore')) {
+                    }
+                    window.onload = function () {
+                        $("#loading").fadeOut();
+                    }
+                </script>
+                <?php
+                }
             }//ens switch class
         }//end if isset class
         ?>

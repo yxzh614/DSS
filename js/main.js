@@ -12,7 +12,7 @@ $(document).ready(function() {
         });
     });if(count!=0)
         totalRow/=count;
-    $('#ascore').text('平均分:'+totalRow);
+    $('#ascore').text('平均分:'+totalRow.toFixed(2));
 
 }
 );
@@ -142,3 +142,8 @@ function GetXmlHttpObject()
 function getaverage() {
     window.location="admin.php?class=count&col="+document.getElementById("InputCol").value+"&grade="+document.getElementById("InputGrade").value;
 }
+
+function checkDel() {
+    return !!window.confirm("你确定要删除这条数据吗？");
+}
+

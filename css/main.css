@@ -3,14 +3,27 @@ table tr td{
     vertical-align:middle;
 }
 
-#login {
-    margin-left: auto;
-    margin-right: auto;
+#loginform {
     vertical-align: middle;
     width: 280px;
     height: 280px;
+    float: right;
+    margin-right: 9%;
+    margin-top: 100px;
+    background-color: transparent;
 }
 
+#login-head {
+
+    width: 70%;
+    float: left;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 2%;
+}
+#login-head h1{
+    margin-left: 0;
+}
 #leftbar {
     width: 280px;
     height: 100px;
@@ -35,4 +48,44 @@ body{
     width: 100%;
     height: 100%;
     background-color: white;
+}
+
+#delform {
+    margin-top: 20px;
+}
+
+#icon {
+    float: left;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background: transparent url(icon/school_logo_1.png);
+    border: 0;
+}
+#icontext{
+float: left;
+    margin: 0 auto;
+    margin-left: 5%;
+    width: 823px;
+    height: 150px;
+    background-size: cover;
+
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background: transparent url(icon/school_name_1.png)no-repeat;
+    border: 0;
+}
+
+#login {
+    background-image: url("icon/mainImg.png");
+}
+
+#research {
+    display: none;
 }
