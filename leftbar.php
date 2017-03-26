@@ -59,7 +59,6 @@ require_once ("setting.php");
             case 'building':{
                 $sqlFindAllBuilding = "select BuildNum from tbl_building";
                 $resFAT = mysqli_query($db, $sqlFindAllBuilding);
-
                 while ($rowsFAT = mysqli_fetch_assoc($resFAT)) {
                     echo "<a class='list-group-item' href='index.php?class=building&building=" . $rowsFAT["BuildNum"] . "'>" . $rowsFAT["BuildNum"] . "</a>";
                 }
@@ -69,11 +68,54 @@ require_once ("setting.php");
                 echo "<a href='admin.php?class=upfile&type=score' class='list-group-item'>评分信息</a>";
             } break;
             case 'count':{
+                ?>
+                <form>
+        <div class="input-group">
+            <input type="text" class="form-control" aria-label="..." title="学院" id="InputCol" value="">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">学院<span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <?php
+                    $sqlFindAllCollege = "select HouseName,HouseID from tbl_college_name ORDER BY HouseID";
+                    $resFAC = mysqli_query($db, $sqlFindAllCollege);
+                    while ($rowsFAC=mysqli_fetch_assoc($resFAC)){
+                        echo '<li><a onclick="inputName('."'InputCol'".',this)">'.$rowsFAC["HouseName"].'</a></li>';
+                    }
+                    ?>
+                </ul>
+            </div><!-- /btn-group -->
+        </div><!-- /input-group -->
+        <div class="input-group">
+            <input type="text" class="form-control" aria-label="..." title="年级" id="InputGrade">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  onclick=showHint(document.getElementById('InputCol').value)>年级<span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right" id="TeacherList">
+                </ul>
+            </div><!-- /btn-group -->
+        </div><!-- /input-group -->
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="..." title="年级" id="InputTeacher">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  onclick=showHint(document.getElementById('InputCol').value)>学年<span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right" id="TeacherList">
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
 
-                echo "<a href='admin.php?class=count&type=college' class='list-group-item'>学院</a>";
+                    <a onclick="getaverage()" class="btn btn-default" name="submit">确定</a>
+                </form>
+                <?php
             }break;
         }
     }
     ?>
 </div>
-
+<script>
+    var XMLHTTP=null;
+    if(window.XMLHttpRequest){
+        XMLHTTP=new XMLHttpRequest();
+    }else if (window.ActiveXObject)
+    {
+        XMLHttp=new ActiveXObject("Microsoft.XMLHTTP")
+    }
+</script>

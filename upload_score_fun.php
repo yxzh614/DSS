@@ -60,7 +60,8 @@ function uploadFile($db, $file,$filetempname)
             if($strs[0]!=''){
             //var_dump($strs);
             //die();
-            $sql = "INSERT INTO `tbl_studentscore` (`ID`, `StuNum`, `Time`, `UserName`, `Score`, `Category`) VALUES (NULL, '" . $strs[0] . "', '" . $strs[8] . "', '" . $strs[7] . "', " . $strs[11] . ", NULL)";
+
+            $sql = "INSERT INTO `tbl_studentscore` (`ID`, `StuNum`, `Time`, `UserName`, `Score`, `Category`) VALUES (NULL, '" . $strs[0] . "', '" . $strs[8] . "', (SELECT tbl_user.UserName FROM tbl_user WHERE tbl_user.Name = '" . $strs[7] . "'), " . $strs[11] . ", NULL)";
             //echo $sql;
             mysqli_query($db, ' set names utf8');//这就是指定数据库字符集，一般放在连接数据库后面就系了
             if (!mysqli_query($db, $sql)) {

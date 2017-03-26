@@ -79,342 +79,388 @@
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="33" parent="13" name="PRIMARY">
+    <index id="33" parent="13" name="CDG">
+      <ColNames>College
+Department
+Grade</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="34" parent="13" name="College">
+      <ColNames>College
+Department
+Grade</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="35" parent="13" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="34" parent="14" name="ID">
+    <key id="36" parent="13" name="CDG">
+      <ColNames>College
+Department
+Grade</ColNames>
+      <UnderlyingIndexName>CDG</UnderlyingIndexName>
+    </key>
+    <key id="37" parent="13" name="College">
+      <ColNames>College
+Department
+Grade</ColNames>
+      <UnderlyingIndexName>College</UnderlyingIndexName>
+    </key>
+    <column id="38" parent="14" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="35" parent="14" name="HouseID">
+    <column id="39" parent="14" name="HouseID">
       <Position>2</Position>
       <Comment>学院编号</Comment>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="36" parent="14" name="HouseName">
+    <column id="40" parent="14" name="HouseName">
       <Position>3</Position>
       <Comment>学院名</Comment>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="37" parent="14" name="PRIMARY">
+    <key id="41" parent="14" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="38" parent="15" name="ID">
+    <column id="42" parent="15" name="ID">
       <Position>1</Position>
       <DataType>int(5)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="39" parent="15" name="DepID">
+    <column id="43" parent="15" name="DepID">
       <Position>2</Position>
       <Comment>专业编号</Comment>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="40" parent="15" name="DepName">
+    <column id="44" parent="15" name="DepName">
       <Position>3</Position>
       <Comment>专业名称</Comment>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="41" parent="15" name="PRIMARY">
+    <key id="45" parent="15" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="42" parent="16" name="ID">
+    <column id="46" parent="16" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="43" parent="16" name="UserName">
+    <column id="47" parent="16" name="UserName">
       <Position>2</Position>
       <Comment>管理员（宿管）</Comment>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="44" parent="16" name="BuildNum">
+    <column id="48" parent="16" name="BuildNum">
       <Position>3</Position>
       <Comment>楼号</Comment>
       <DataType>tinyint(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="45" parent="16" name="Category">
+    <column id="49" parent="16" name="Category">
       <Position>4</Position>
       <Comment>备注</Comment>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="46" parent="16" name="PRIMARY">
+    <key id="50" parent="16" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="47" parent="17" name="ID">
+    <column id="51" parent="17" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="48" parent="17" name="RoomNum">
+    <column id="52" parent="17" name="RoomNum">
       <Position>2</Position>
       <Comment>宿舍号</Comment>
       <DataType>smallint(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="49" parent="17" name="BuildNum">
+    <column id="53" parent="17" name="BuildNum">
       <Position>3</Position>
       <Comment>楼号</Comment>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="50" parent="17" name="StuCount">
+    <column id="54" parent="17" name="StuCount">
       <Position>4</Position>
       <Comment>学生数量</Comment>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="51" parent="17" name="Category">
+    <column id="55" parent="17" name="Category">
       <Position>5</Position>
       <Comment>备注</Comment>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="52" parent="17" name="PRIMARY">
+    <key id="56" parent="17" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="53" parent="18" name="ID">
+    <column id="57" parent="18" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="54" parent="18" name="RoomNum">
+    <column id="58" parent="18" name="RoomNum">
       <Position>2</Position>
       <Comment>宿舍号</Comment>
       <DataType>smallint(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="55" parent="18" name="Time">
+    <column id="59" parent="18" name="Time">
       <Position>3</Position>
       <Comment>打分时间</Comment>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="56" parent="18" name="UserName">
+    <column id="60" parent="18" name="UserName">
       <Position>4</Position>
       <Comment>管理员（打分人）</Comment>
       <DataType>varchar(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="57" parent="18" name="Score">
+    <column id="61" parent="18" name="Score">
       <Position>5</Position>
       <Comment>分数</Comment>
       <DataType>smallint(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="18" name="Category">
+    <column id="62" parent="18" name="Category">
       <Position>6</Position>
       <Comment>备注</Comment>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="59" parent="18" name="PRIMARY">
+    <key id="63" parent="18" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="60" parent="19" name="ID">
+    <column id="64" parent="19" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="61" parent="19" name="StuNum">
+    <column id="65" parent="19" name="StuNum">
       <Position>2</Position>
       <Comment>学号</Comment>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="62" parent="19" name="BuildNum">
+    <column id="66" parent="19" name="BuildNum">
       <Position>3</Position>
       <Comment>楼号</Comment>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="63" parent="19" name="RoomNum">
+    <column id="67" parent="19" name="RoomNum">
       <Position>4</Position>
       <Comment>宿舍号</Comment>
       <DataType>smallint(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="64" parent="19" name="BedNum">
+    <column id="68" parent="19" name="BedNum">
       <Position>5</Position>
       <Comment>床号</Comment>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="65" parent="19" name="PRIMARY">
+    <index id="69" parent="19" name="StuNum">
+      <ColNames>StuNum</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="19" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="66" parent="20" name="ID">
+    <key id="71" parent="19" name="StuNum">
+      <ColNames>StuNum</ColNames>
+      <UnderlyingIndexName>StuNum</UnderlyingIndexName>
+    </key>
+    <column id="72" parent="20" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="67" parent="20" name="StuNum">
+    <column id="73" parent="20" name="StuNum">
       <Position>2</Position>
       <Comment>学号</Comment>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="68" parent="20" name="UserName">
+    <column id="74" parent="20" name="UserName">
       <Position>3</Position>
       <Comment>管理员（导员）</Comment>
       <DataType>varchar(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="69" parent="20" name="Category">
+    <column id="75" parent="20" name="Category">
       <Position>4</Position>
       <Comment>备注</Comment>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <key id="70" parent="20" name="PRIMARY">
+    <index id="76" parent="20" name="StuNum">
+      <ColNames>StuNum</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="77" parent="20" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="71" parent="21" name="StuNum">
+    <key id="78" parent="20" name="StuNum">
+      <ColNames>StuNum</ColNames>
+      <UnderlyingIndexName>StuNum</UnderlyingIndexName>
+    </key>
+    <column id="79" parent="21" name="StuNum">
       <Position>1</Position>
       <Comment>学号</Comment>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="72" parent="21" name="StuName">
+    <column id="80" parent="21" name="StuName">
       <Position>2</Position>
       <Comment>姓名</Comment>
       <DataType>varchar(5)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="73" parent="21" name="StuTel">
+    <column id="81" parent="21" name="StuTel">
       <Position>3</Position>
       <Comment>电话</Comment>
       <DataType>varchar(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="74" parent="21" name="Catrgory">
+    <column id="82" parent="21" name="Catrgory">
       <Position>4</Position>
       <Comment>备注</Comment>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <index id="75" parent="21" name="StuNum">
+    <index id="83" parent="21" name="StuNum">
       <ColNames>StuNum</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="76" parent="21" name="StuNum_2">
+    <index id="84" parent="21" name="StuNum_2">
       <ColNames>StuNum</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="77" parent="21" name="PRIMARY">
+    <key id="85" parent="21" name="PRIMARY">
       <ColNames>StuNum</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="78" parent="21" name="StuNum">
+    <key id="86" parent="21" name="StuNum">
       <ColNames>StuNum</ColNames>
       <UnderlyingIndexName>StuNum</UnderlyingIndexName>
     </key>
-    <key id="79" parent="21" name="StuNum_2">
+    <key id="87" parent="21" name="StuNum_2">
       <ColNames>StuNum</ColNames>
       <UnderlyingIndexName>StuNum_2</UnderlyingIndexName>
     </key>
-    <column id="80" parent="22" name="ID">
+    <column id="88" parent="22" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="81" parent="22" name="StuNum">
+    <column id="89" parent="22" name="StuNum">
       <Position>2</Position>
       <Comment>学号</Comment>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="82" parent="22" name="Time">
+    <column id="90" parent="22" name="Time">
       <Position>3</Position>
       <Comment>打分时间</Comment>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="83" parent="22" name="UserName">
+    <column id="91" parent="22" name="UserName">
       <Position>4</Position>
       <Comment>管理员（打分人）</Comment>
       <DataType>varchar(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="84" parent="22" name="Score">
+    <column id="92" parent="22" name="Score">
       <Position>5</Position>
       <Comment>分数</Comment>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="85" parent="22" name="Category">
+    <column id="93" parent="22" name="Category">
       <Position>6</Position>
       <Comment>备注</Comment>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <key id="86" parent="22" name="PRIMARY">
+    <key id="94" parent="22" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="87" parent="23" name="ID">
+    <column id="95" parent="23" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="88" parent="23" name="UserName">
+    <column id="96" parent="23" name="UserName">
       <Position>2</Position>
       <Comment>管理员帐号</Comment>
       <DataType>varchar(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="89" parent="23" name="Password">
+    <column id="97" parent="23" name="Password">
       <Position>3</Position>
       <Comment>密码</Comment>
       <DataType>varchar(70)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="90" parent="23" name="Name">
+    <column id="98" parent="23" name="Name">
       <Position>4</Position>
       <Comment>姓名</Comment>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="91" parent="23" name="Flag">
+    <column id="99" parent="23" name="Flag">
       <Position>5</Position>
       <Comment>权限-0adm-1tea-2do-3stu</Comment>
       <DataType>varchar(5)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="92" parent="23" name="Tel">
+    <column id="100" parent="23" name="Tel">
       <Position>6</Position>
       <Comment>电话</Comment>
       <DataType>varchar(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="93" parent="23" name="Category">
-      <Position>7</Position>
+    <column id="101" parent="23" name="Category">
+      <Position>8</Position>
       <Comment>备注</Comment>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="94" parent="23" name="PRIMARY">
+    <column id="102" parent="23" name="Dependence">
+      <Position>7</Position>
+      <Comment>从属</Comment>
+      <DataType>varchar(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="103" parent="23" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>

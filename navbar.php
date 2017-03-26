@@ -8,7 +8,7 @@
  */
 require_once ("setting.php");
 ?>
-<nav class="navbar navbar-default navbar navbar-fixed-top hidden-print" role="navigation">
+<nav class="navbar navbar-default navbar-inverse navbar navbar-fixed-top hidden-print" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -48,21 +48,20 @@ require_once ("setting.php");
             </ul>
             <form class="navbar-form navbar-left" role="search" action="search.php" method="post">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="target" placeholder="支持学号、班级">
+                    <input type="text" class="form-control" name="target" placeholder="输入学号">
                 </div>
+                <input type="hidden" name="type" value="0">
                 <input type="submit" name="submit" class="btn btn-default" value="搜索">
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="logout.php">退出</a></li>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_COOKIE['username']; ?>
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="user.php">用户管理</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="logout.php">退出</a></li>
                     </ul>
                 </li>
             </ul>
